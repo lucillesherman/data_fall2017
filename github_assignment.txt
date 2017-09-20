@@ -1,0 +1,13 @@
+I downloaded a repository from FiveThirtyEight, specifically from the gun deaths project. 
+
+It took me awhile to navigate to this project and download the code within it, but I finally figured it out! I was a little worried I'd have to give up and ask you what I was doing wrong (but it's 12:15 a.m. on Wednesday morning, so I'm not sure that would've ended well for me). 
+
+I was particularly interested in the CDC data and the supplementary homicide reports. The CDC data is sorted by Intent, Sex, Age and Race, and depending on those four factors, each entry is designated by a four letter combination. There are 540 possible combinations. The supplementary homicide data seems to be a lot more complicated, with a lot more categories and possible combinations. I didn't follow what was going on in this code as well.
+
+ I loved the final result of the project, and I figured these two sets of code would be the things I could filter through and learn the most from. I love how it walks you through exactly what they did, step by step. I followed what was happening for the most part, yet at other times I had no idea what was happening. 
+
+I remember when I first saw this project, and it blew my mind that some code made that happen. On top of that, they did so much of this with publicly available data. I was a big fan of the interactive stuff, so I checked out the interactive_prep.R code as well. That's what I love about this project, and I'm amazed that I have access to look at their processes.  
+
+The interactive code looks pretty similar to the CDC data, and it has 540 possible combinations. 
+
+Chase -- not sure if this is long enough/what you were looking for, but I'm no code master, so I don't quite know what I'm looking at, sometimes. 
