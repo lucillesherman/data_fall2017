@@ -35,11 +35,11 @@ def get_votes_by_date(chamber, start_date, end_date):
     # QUESTION 2: Define the proper URL here. It should use the chamber, start_date and end_date arguments 
     # provided by the function.
 
-    url = 'https://api.propublica.org/congress/v1/{chamber}/votes/{start_date}/{end_date}.json'
+    url = 'https://api.propublica.org/congress/v1/' + chamber + '/votes/' + start_date + '/' + end_date + '.json'
 
     ###################
 
-    response = 'https://api.propublica.org/congress/v1/' + chamber + '/votes/' + start_date + '/' + end_date + '.json'
+    response = requests.get(url, headers={"X-API-Key": API_KEY}).content
 
     ###################
 
@@ -77,21 +77,21 @@ def format_nomination_votes(data):
 
     for vote in data['results']['votes']: 
     
-        date = votes['date']
+        date = vote['date']
 
-        question = votes['question']
+        question = vote['question']
 
-        description = votes['description']
+        description = vote['description']
 
-        result = votes['result']
+        result = vote['result']
 
-        yes = votes[total: 'yes']
+        yes = vote['total']['yes']
 
-        no = votes[total: 'no']
+        no = vote['total']['no']
 
-        present = votes[total: 'present']
+        present = vote['total']['present']
 
-        not_voting = votes[total: 'not_voting']
+        not_voting = vote['total']['not_voting']
 
     ###################
 
